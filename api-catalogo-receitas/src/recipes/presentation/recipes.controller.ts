@@ -5,7 +5,6 @@ import {
   Post,
   Body,
   Param,
-  Inject,
   HttpCode,
   HttpStatus,
   NotFoundException,
@@ -22,7 +21,6 @@ import {
 @Controller('recipes')
 export class RecipesController {
   constructor(
-    // Injeta os casos de uso. O NestJS resolverá essas dependências.
     private readonly createRecipeUseCase: CreateRecipeUseCase,
     private readonly listAllRecipesUseCase: ListAllRecipesUseCase,
     private readonly getRecipeByIdUseCase: GetRecipeByIdUseCase,
