@@ -1,4 +1,3 @@
-// src/recipes/presentation/recipes.controller.ts
 import {
   Controller,
   Get,
